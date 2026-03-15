@@ -4,58 +4,24 @@ import FAQAccordion from "@/components/FAQAccordion";
 
 const services = [
   {
-    name: "Cabinet Painting & Refinishing",
+    name: "Interior Walls & Ceilings",
+    description: "Complete interior transformations with flawless finishes. Walls, ceilings, accent walls, and detailed edge work that makes every room feel brand new.",
+    image: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80",
+  },
+  {
+    name: "Trim & Door Painting",
+    description: "Crisp, clean lines on baseboards, crown molding, door frames, and doors. The finishing touches that elevate your entire home.",
+    image: "https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?w=800&q=80",
+  },
+  {
+    name: "Cabinet Painting",
     description: "Transform your kitchen or bathroom with a flawless factory finish. No need for costly replacements when Christine can make your cabinets look brand new.",
-    icon: (
-      <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
-      </svg>
-    ),
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
   },
   {
-    name: "Furniture Restoration",
+    name: "Furniture Refinishing",
     description: "Breathe new life into cherished heirlooms and antiques. From your grandmother's dining set to a vintage dresser, Christine restores them to their former glory.",
-    icon: (
-      <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M4.098 19.902a3.75 3.75 0 005.304 0l6.401-6.402M6.75 21A3.75 3.75 0 013 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 003.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008z" />
-      </svg>
-    ),
-  },
-  {
-    name: "Interior Painting",
-    description: "Complete interior transformations with flawless finishes. Walls, ceilings, trim, accent walls, and detailed edge work that makes every room feel brand new.",
-    icon: (
-      <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-      </svg>
-    ),
-  },
-  {
-    name: "Exterior Painting",
-    description: "Boost curb appeal with durable exterior coatings that protect your home against Alabama's heat, humidity, and storms. Built to last, painted to impress.",
-    icon: (
-      <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-      </svg>
-    ),
-  },
-  {
-    name: "Countertop Painting",
-    description: "Transform outdated countertops with a stunning, durable painted finish at a fraction of the cost of full replacement. Modern looks without the renovation hassle.",
-    icon: (
-      <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />
-      </svg>
-    ),
-  },
-  {
-    name: "Epoxy & Specialty Work",
-    description: "Custom epoxy tables, stair painting and staining, drywall repair, and specialty finishes. If it can be painted or refinished, Christine can make it pristine.",
-    icon: (
-      <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
-      </svg>
-    ),
+    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
   },
 ];
 
@@ -78,7 +44,7 @@ const reviews = [
   {
     name: "Michael Brisbois",
     text: "Done a excellent job for my grandparents. Definitely would recommend her to anyone looking for quality painting work.",
-    source: "Yelp",
+    source: "Google",
   },
 ];
 
@@ -109,6 +75,17 @@ const faqItems = [
   },
 ];
 
+const galleryImages = [
+  { src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80", alt: "Beautiful painted living room interior" },
+  { src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80", alt: "Freshly painted white kitchen cabinets" },
+  { src: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80", alt: "Elegant bedroom with fresh paint" },
+  { src: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80", alt: "Modern living room with professional paint job" },
+  { src: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80", alt: "Refinished furniture piece" },
+  { src: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80", alt: "Modern interior with clean paint lines" },
+  { src: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=80", alt: "Professional painter at work" },
+  { src: "https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?w=800&q=80", alt: "Detail trim and molding work" },
+];
+
 const serviceAreas = [
   "Hamilton, AL",
   "Sulligent, AL",
@@ -121,7 +98,7 @@ function Stars({ count }: { count: number }) {
   return (
     <div className="flex gap-0.5">
       {Array.from({ length: count }).map((_, i) => (
-        <svg key={i} className="h-5 w-5 text-accent-light" fill="currentColor" viewBox="0 0 20 20">
+        <svg key={i} className="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
         </svg>
       ))}
@@ -147,45 +124,39 @@ export default function Home() {
         }}
       />
 
-      {/* ===== HERO ===== */}
-      <section className="relative flex min-h-screen items-center overflow-hidden bg-gradient-to-br from-primary via-primary-light to-primary">
-        {/* Decorative SVG paint strokes */}
-        <div className="absolute inset-0 overflow-hidden opacity-[0.07]">
-          <svg className="absolute -top-20 -right-20 h-[600px] w-[600px] text-accent" viewBox="0 0 200 200" fill="currentColor">
-            <path d="M44.7,-76.4C58.8,-69.2,71.8,-58.1,79.6,-44.2C87.4,-30.3,90,-13.6,88.3,2.3C86.5,18.2,80.4,33.3,70.8,45.5C61.2,57.7,48.1,67,34.1,73.1C20.1,79.2,5.2,82.1,-10.3,80.6C-25.8,79.1,-41.9,73.2,-54.5,63.4C-67.1,53.6,-76.2,39.8,-81.2,24.5C-86.2,9.2,-87.1,-7.6,-82.5,-22.5C-77.9,-37.4,-67.8,-50.4,-55,-59.2C-42.2,-68,-26.7,-72.6,-11,-72.1C4.7,-71.6,30.6,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
-          </svg>
-          <svg className="absolute -bottom-32 -left-32 h-[500px] w-[500px] text-white" viewBox="0 0 200 200" fill="currentColor">
-            <path d="M39.5,-65.3C52.9,-60.7,67.1,-53.6,74.8,-42C82.5,-30.4,83.7,-15.2,82.2,-0.9C80.7,13.4,76.5,26.8,68.8,37.8C61.1,48.8,49.9,57.4,37.5,63.1C25.1,68.8,11.6,71.6,-2.3,75.4C-16.2,79.2,-30.4,84,-42.4,79.6C-54.4,75.2,-64.2,61.6,-71.1,47C-78,32.4,-82,16.2,-81.3,0.4C-80.6,-15.4,-75.2,-30.8,-66.1,-42.4C-57,-54,-44.2,-61.8,-31.1,-66.6C-18,-71.4,-4.5,-73.2,5,-68.2C14.5,-63.2,26.1,-69.9,39.5,-65.3Z" transform="translate(100 100)" />
-          </svg>
-        </div>
-
-        {/* Subtle gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-primary/60" />
+      {/* ===== HERO - Full Bleed Background Image ===== */}
+      <section className="hero-section relative flex min-h-screen items-center overflow-hidden">
+        {/* Background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80')" }}
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/60 to-black/40" />
 
         <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-32 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            {/* Badge */}
-            <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-accent/30 bg-accent/10 px-6 py-2.5 backdrop-blur-sm">
-              <svg className="h-5 w-5 text-accent-light" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            {/* Google badge */}
+            <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-5 py-2.5 backdrop-blur-sm">
+              {/* Google G icon */}
+              <svg className="h-5 w-5" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" />
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
               </svg>
-              <span className="text-sm font-semibold tracking-wide text-accent-light">
-                5.0 Rated &nbsp;|&nbsp; Women-Owned
+              <span className="text-sm font-semibold tracking-wide text-white">
+                5.0 &#9733; Rated on Google
               </span>
             </div>
 
             {/* Heading */}
             <h1 className="font-[family-name:var(--font-heading)] text-5xl leading-[1.1] tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Pristine Results,{" "}
-              <span className="relative">
-                Every Time
-                <span className="absolute -bottom-2 left-0 h-1 w-full rounded-full bg-gradient-to-r from-accent to-accent-light" />
-              </span>
+              Christine&apos;s Pristine Painting
             </h1>
 
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/75 sm:text-xl">
-              From hand-painted cabinets to heirloom furniture restoration, Christine brings an
-              artist&apos;s eye and meticulous attention to detail to every project she touches.
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/80 sm:text-xl">
+              Hamilton, Alabama&apos;s Trusted Interior Painting Specialist. From hand-painted cabinets to heirloom furniture restoration, every project gets an artist&apos;s eye and meticulous attention to detail.
             </p>
 
             {/* CTAs */}
@@ -194,7 +165,7 @@ export default function Home() {
                 href="#contact"
                 className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-accent to-accent-light px-8 py-4 text-base font-bold text-white shadow-lg shadow-accent/25 transition-all duration-300 hover:shadow-xl hover:shadow-accent/30 hover:brightness-110 active:scale-[0.98]"
               >
-                Get Your Free Quote
+                Get Your Free Estimate
                 <svg className="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
@@ -206,59 +177,51 @@ export default function Home() {
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                Call Christine
+                (205) 570-5579
               </a>
-            </div>
-
-            {/* Social proof strip */}
-            <div className="mt-14 flex flex-wrap items-center gap-8 border-t border-white/15 pt-8">
-              <div className="flex items-center gap-3">
-                <div className="flex -space-x-0.5">
-                  {[1, 2, 3, 4, 5].map((i) => (
-                    <svg key={i} className="h-5 w-5 text-accent-light" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                <span className="text-sm font-semibold text-white">5.0 Perfect Rating</span>
-              </div>
-              <div className="hidden h-5 w-px bg-white/25 sm:block" />
-              <span className="hidden text-sm text-white/60 sm:inline">
-                Trusted across <strong className="text-white">4+ counties</strong>
-              </span>
-              <div className="hidden h-5 w-px bg-white/25 sm:block" />
-              <span className="hidden text-sm text-white/60 lg:inline">
-                <strong className="text-white">Google</strong> &amp; <strong className="text-white">Yelp</strong> verified
-              </span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ===== STATS ===== */}
-      <section className="relative z-10 -mt-1 bg-white py-16 px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto grid max-w-5xl grid-cols-2 gap-8 sm:grid-cols-4">
+      {/* ===== TRUST BAR ===== */}
+      <section className="relative z-10 bg-primary py-6">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-6 px-4 sm:gap-10 lg:gap-16">
           {[
-            { number: "5.0", label: "Star Rating", sub: "Everywhere" },
-            { number: "4+", label: "Counties Served", sub: "AL, MS & FL" },
-            { number: "100%", label: "Satisfaction", sub: "Guaranteed" },
-            { number: "Detail", label: "Oriented", sub: "Every project" },
-          ].map((stat) => (
-            <div key={stat.label} className="relative text-center">
-              <div className="mx-auto mb-4 h-1 w-12 rounded-full bg-gradient-to-r from-accent to-accent-light" />
-              <p className="font-[family-name:var(--font-heading)] text-4xl text-primary sm:text-5xl">
-                {stat.number}
-              </p>
-              <p className="mt-1 text-sm font-bold uppercase tracking-wider text-primary/80">
-                {stat.label}
-              </p>
-              <p className="mt-0.5 text-xs text-gray-400">{stat.sub}</p>
+            { icon: "star", text: "5-Star Google Rating" },
+            { icon: "camera", text: "20+ Yelp Photos" },
+            { icon: "shield", text: "Licensed & Insured" },
+            { icon: "check", text: "Free Estimates" },
+          ].map((item) => (
+            <div key={item.text} className="flex items-center gap-2.5">
+              {item.icon === "star" && (
+                <svg className="h-5 w-5 text-accent-light" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              )}
+              {item.icon === "camera" && (
+                <svg className="h-5 w-5 text-accent-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              )}
+              {item.icon === "shield" && (
+                <svg className="h-5 w-5 text-accent-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              )}
+              {item.icon === "check" && (
+                <svg className="h-5 w-5 text-accent-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              )}
+              <span className="text-sm font-semibold text-white/90">{item.text}</span>
             </div>
           ))}
         </div>
       </section>
 
-      {/* ===== SIGNATURE SERVICES ===== */}
+      {/* ===== SERVICE CARDS WITH IMAGES ===== */}
       <section id="services" className="bg-surface py-24 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="mb-16 text-center">
@@ -272,39 +235,89 @@ export default function Home() {
               From kitchen cabinets to antique furniture, Christine delivers precision craftsmanship on every surface
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((service, i) => (
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {services.map((service) => (
               <div
                 key={service.name}
-                className="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl"
+                className="service-card group relative h-80 overflow-hidden rounded-2xl shadow-lg"
               >
-                {/* Gold gradient top border */}
-                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-accent via-accent-light to-accent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/5 text-primary transition-all duration-500 group-hover:bg-gradient-to-br group-hover:from-accent group-hover:to-accent-light group-hover:text-white group-hover:shadow-lg group-hover:shadow-accent/20">
-                  {service.icon}
+                <img
+                  src={service.image}
+                  alt={service.name}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
+                  <h3 className="text-2xl font-bold text-white font-[family-name:var(--font-heading)]">
+                    {service.name}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-white/80">
+                    {service.description}
+                  </p>
                 </div>
-                <h3 className="mt-6 text-xl font-bold text-primary">{service.name}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-gray-500">{service.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ===== PROCESS ===== */}
+      {/* ===== BEFORE / AFTER ===== */}
       <section className="bg-white py-24 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-16 text-center">
             <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">
-              How It Works
+              The Transformation
             </p>
             <h2 className="font-[family-name:var(--font-heading)] text-3xl tracking-tight text-primary sm:text-4xl lg:text-5xl">
+              Before &amp; After
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl text-lg text-gray-500">
+              See the dramatic difference a professional paint job makes
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="relative overflow-hidden rounded-2xl shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=600&q=80"
+                alt="Room before professional painting"
+                loading="lazy"
+                className="h-80 w-full object-cover sm:h-96"
+              />
+              <div className="absolute top-4 left-4 rounded-full bg-red-500/90 px-4 py-1.5 text-sm font-bold uppercase tracking-wider text-white">
+                Before
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-2xl shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80"
+                alt="Room after Christine's professional painting"
+                loading="lazy"
+                className="h-80 w-full object-cover sm:h-96"
+              />
+              <div className="absolute top-4 left-4 rounded-full bg-green-500/90 px-4 py-1.5 text-sm font-bold uppercase tracking-wider text-white">
+                After
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== PROCESS ===== */}
+      <section className="relative overflow-hidden py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=1920&q=80')", backgroundSize: "cover", backgroundPosition: "center" }}>
+        <div className="absolute inset-0 bg-primary/90" />
+        <div className="relative z-10 mx-auto max-w-6xl">
+          <div className="mb-16 text-center">
+            <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent-light">
+              How It Works
+            </p>
+            <h2 className="font-[family-name:var(--font-heading)] text-3xl tracking-tight text-white sm:text-4xl lg:text-5xl">
               From Vision to Pristine
             </h2>
           </div>
           <div className="relative grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
             {/* Connecting line */}
-            <div className="absolute top-12 left-[10%] right-[10%] hidden h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent lg:block" />
+            <div className="absolute top-12 left-[10%] right-[10%] hidden h-px bg-gradient-to-r from-transparent via-accent-light/30 to-transparent lg:block" />
 
             {[
               { step: "01", title: "Consultation", desc: "Christine visits your home, listens to your vision, and provides a detailed free estimate." },
@@ -313,13 +326,13 @@ export default function Home() {
               { step: "04", title: "Pristine Reveal", desc: "A thorough walkthrough to ensure every detail meets Christine's exacting standards." },
             ].map((item) => (
               <div key={item.step} className="relative text-center">
-                <div className="relative z-10 mx-auto flex h-24 w-24 items-center justify-center rounded-full border-2 border-accent/20 bg-white shadow-sm">
-                  <span className="font-[family-name:var(--font-heading)] text-3xl text-accent">
+                <div className="relative z-10 mx-auto flex h-24 w-24 items-center justify-center rounded-full border-2 border-accent-light/30 bg-primary-light shadow-lg">
+                  <span className="font-[family-name:var(--font-heading)] text-3xl text-accent-light">
                     {item.step}
                   </span>
                 </div>
-                <h3 className="mt-6 text-lg font-bold text-primary">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-gray-500">{item.desc}</p>
+                <h3 className="mt-6 text-lg font-bold text-white">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-white/60">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -332,7 +345,6 @@ export default function Home() {
           {/* Photo / Card side */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-3xl bg-white p-8 shadow-xl sm:p-12">
-              {/* Decorative corner accent */}
               <div className="absolute top-0 right-0 h-32 w-32 bg-gradient-to-bl from-accent/10 to-transparent" />
               <div className="absolute bottom-0 left-0 h-32 w-32 bg-gradient-to-tr from-primary/5 to-transparent" />
 
@@ -376,9 +388,8 @@ export default function Home() {
               </p>
               <p>
                 Based in Hamilton, Alabama, Christine serves homeowners across Northwest Alabama and
-                beyond. Her versatility is what sets her apart: interior and exterior painting, cabinet
-                refinishing, countertop transformations, furniture restoration, custom epoxy work, and
-                more. One call truly covers it all.
+                beyond. Her versatility is what sets her apart: interior painting, cabinet
+                refinishing, furniture restoration, and more. One call truly covers it all.
               </p>
               <p>
                 As a women-owned business, Christine&apos;s Pristine Painting brings a personal touch
@@ -404,43 +415,65 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== REVIEWS ===== */}
+      {/* ===== GOOGLE REVIEWS WIDGET ===== */}
       <section id="reviews" className="bg-white py-24 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <div className="mb-16 text-center">
-            <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">
-              Testimonials
-            </p>
+          {/* Google Reviews Header Widget */}
+          <div className="mb-12 flex flex-col items-center">
+            <div className="mb-6 flex items-center gap-3 rounded-2xl border border-gray-200 bg-white px-8 py-5 shadow-md">
+              <svg className="h-10 w-10" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" />
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+              </svg>
+              <div>
+                <div className="flex items-center gap-2">
+                  <span className="text-3xl font-bold text-gray-900">5.0</span>
+                  <span className="text-lg text-gray-500">out of 5</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Stars count={5} />
+                  <span className="text-sm text-gray-400">Based on 4 reviews</span>
+                </div>
+              </div>
+            </div>
             <h2 className="font-[family-name:var(--font-heading)] text-3xl tracking-tight text-primary sm:text-4xl lg:text-5xl">
               What Our Clients Say
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-lg text-gray-500">
-              5.0 stars on every platform. Read the reviews that speak for themselves.
-            </p>
           </div>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+
+          {/* Review Cards */}
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {reviews.map((review) => (
               <div
                 key={review.name}
                 className="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-8 shadow-sm transition-all duration-300 hover:shadow-lg sm:p-10"
               >
-                {/* Gold quote mark */}
-                <div className="absolute -top-2 -left-2 font-[family-name:var(--font-heading)] text-8xl leading-none text-accent/10">
-                  &ldquo;
+                {/* Google icon in corner */}
+                <div className="absolute top-4 right-4">
+                  <svg className="h-6 w-6 opacity-30" viewBox="0 0 24 24">
+                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" />
+                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                  </svg>
                 </div>
+
                 <div className="relative">
                   <Stars count={5} />
                   <p className="mt-5 text-base leading-relaxed text-gray-600">
                     &ldquo;{review.text}&rdquo;
                   </p>
-                  <div className="mt-8 flex items-center justify-between border-t border-gray-100 pt-6">
+                  <div className="mt-8 flex items-center gap-4 border-t border-gray-100 pt-6">
+                    {/* Avatar circle with initial */}
+                    <div className="flex h-11 w-11 items-center justify-center rounded-full bg-primary text-lg font-bold text-white">
+                      {review.name.charAt(0)}
+                    </div>
                     <div>
                       <p className="text-base font-bold text-primary">{review.name}</p>
-                      <p className="text-xs text-gray-400">Verified Customer</p>
+                      <p className="text-xs text-gray-400">{review.source} Review</p>
                     </div>
-                    <span className="rounded-full bg-primary/5 px-3 py-1 text-xs font-semibold text-primary">
-                      {review.source}
-                    </span>
                   </div>
                 </div>
               </div>
@@ -449,9 +482,48 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===== PHOTO GALLERY ===== */}
+      <section className="bg-surface py-24 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-16 text-center">
+            <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">
+              Our Work
+            </p>
+            <h2 className="font-[family-name:var(--font-heading)] text-3xl tracking-tight text-primary sm:text-4xl lg:text-5xl">
+              Photo Gallery
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl text-lg text-gray-500">
+              Browse our portfolio of completed projects across Northwest Alabama
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+            {galleryImages.map((img, i) => (
+              <div
+                key={i}
+                className="gallery-item group relative overflow-hidden rounded-xl shadow-md"
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                  className="h-56 w-full object-cover transition-transform duration-700 group-hover:scale-110 sm:h-64"
+                />
+                <div className="absolute inset-0 bg-primary/0 transition-all duration-500 group-hover:bg-primary/40" />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                  <svg className="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
+                  </svg>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ===== WHY CHOOSE ===== */}
-      <section className="bg-primary py-24 px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-6xl">
+      <section className="relative overflow-hidden py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=80')", backgroundSize: "cover", backgroundPosition: "center" }}>
+        <div className="absolute inset-0 bg-primary/90" />
+        <div className="relative z-10 mx-auto max-w-6xl">
           <div className="mb-16 text-center">
             <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent-light">
               The Pristine Difference
@@ -514,7 +586,7 @@ export default function Home() {
       </section>
 
       {/* ===== SERVICE AREAS ===== */}
-      <section className="bg-surface py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-white py-24 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">
             Coverage Area
@@ -529,7 +601,7 @@ export default function Home() {
             {serviceAreas.map((area) => (
               <span
                 key={area}
-                className="rounded-full border border-primary/15 bg-white px-6 py-3 text-sm font-semibold text-primary shadow-sm transition-all duration-300 hover:border-accent hover:bg-accent hover:text-white hover:shadow-md"
+                className="rounded-full border border-primary/15 bg-surface px-6 py-3 text-sm font-semibold text-primary shadow-sm transition-all duration-300 hover:border-accent hover:bg-accent hover:text-white hover:shadow-md"
               >
                 {area}
               </span>
@@ -539,7 +611,7 @@ export default function Home() {
       </section>
 
       {/* ===== FAQ ===== */}
-      <section className="bg-white py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-surface py-24 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <div className="mb-12 text-center">
             <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">FAQ</p>
